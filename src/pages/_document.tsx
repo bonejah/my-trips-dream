@@ -1,3 +1,4 @@
+import Analytics from 'components/Analytics'
 import Document, {
   Html,
   Head,
@@ -47,6 +48,7 @@ export default class MyDocument extends Document {
           <Main />
           {/* @ts-expect-error Server Component */}
           <NextScript />
+          <Analytics />
         </body>
       </Html>
     )
