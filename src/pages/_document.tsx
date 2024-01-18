@@ -7,6 +7,7 @@ import Document, {
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
+{/* @ts-expect-error Server Component */}
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet()
@@ -17,6 +18,7 @@ export default class MyDocument extends Document {
         originalRenderPage({
           enhanceApp: (App) =>
             function enhance(props) {
+              {/* @ts-expect-error Server Component */}
               return sheet.collectStyles(<App {...props} />)
             }
         })
@@ -39,9 +41,11 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="pt-BR">
+        {/* @ts-expect-error Server Component */}
         <Head />
         <body>
           <Main />
+          {/* @ts-expect-error Server Component */}
           <NextScript />
         </body>
       </Html>
