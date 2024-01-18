@@ -18,7 +18,7 @@ export default class MyDocument extends Document {
         originalRenderPage({
           enhanceApp: (App) =>
             function enhance(props) {
-              {/* @ts-expect-error Server Component */}
+            {/* @ts-expect-error Server Component */}
               return sheet.collectStyles(<App {...props} />)
             }
         })

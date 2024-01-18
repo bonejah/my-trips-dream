@@ -9,7 +9,6 @@ type LinkWrapperProps = {
 
 const LinkWrapper = ({ href, children }: LinkWrapperProps) => (
   <S.Wrapper>
-     {/* @ts-expect-error Server Component */}
     <Link href={href}>{children}</Link>
   </S.Wrapper>
 )
