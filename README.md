@@ -45,10 +45,8 @@ This is a web application used to record the places of intention of my possible 
 ---
 
 ## Links
+- [my-trips-dream](https://my-trips-dream.vercel.app)
 
-```
-- [my-trips-dream:](https://my-trips-dream.vercel.app)
-```
 
 ---
 
