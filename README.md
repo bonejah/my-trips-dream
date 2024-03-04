@@ -17,6 +17,8 @@
 This is a web application used to record the places of intention of my possible trips.
 ```
 
+- Application URL: [my-trips-dream](https://my-trips-dream.vercel.app/)
+
 ---
 
 ## Technologies
