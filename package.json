@@ -68,7 +68,7 @@
     "next-sitemap": "^4.2.3",
     "plop": "^3.0.5",
     "prettier": "^2.5.1",
-    "typescript": "^4.5.4"
+    "typescript": "^5.4.3"
   },
   "resolutions": {
     "**/@types/react": "^18.0.1",
